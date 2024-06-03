@@ -35,7 +35,8 @@ To get a local copy up and running, follow these simple steps.
 ### Prerequisites
 
 Ensure you have R and devtools installed on your machine:
-```sh install.packages("devtools")```
+    ```r
+    install.packages("devtools")```
 
 ### Installation
 
@@ -43,9 +44,23 @@ Ensure you have R and devtools installed on your machine:
    ```sh
    git clone https://github.com/DanieLucas28/BCCPackage.git
 
-### Installation
-
 2. Install the package:
    ```sh
    devtools::install("BCCPackage")
+
+## Usage
+
+Here are some examples of how to use the package:
+
+### Example for Type 1 Chart with Discrete Data
+
+    ```r
+    library(bcc)
+    data <- c(0.12, 0.18, 0.14, 0.28, 0.22)
+    sizes <- c(101, 98, 110, 105, 95)
+    bcc(data, sizes, type=1, title="Beta Control Chart for Discrete Data")
+
+### Example for Type 2 Chart with Continuous Data
+data <- c(0.59, 0.67, 0.61, 0.70, 0.75)
+bcc(data, type=2, title="Beta Control Chart for Continuous Data")
 
