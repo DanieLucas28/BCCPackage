@@ -37,6 +37,12 @@ Ensure you have R and devtools installed on your machine:
 ```sh
 install.packages("devtools")
 ```
+### Installation
+
+Ensure you have R and devtools installed on your machine:
+```r
+install.packages("devtools")
+```
 ### Example for Type 1 Chart with Discrete Data
 
 ```r
