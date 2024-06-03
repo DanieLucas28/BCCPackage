@@ -7,30 +7,41 @@
 bcc(data, sizes = NULL, type, title = NULL)
 }
 \arguments{
-\item{data}{A numeric vector of data values.}
+\item{data}{A numeric vector of data values to be plotted on the control chart.}
 
-\item{sizes}{An optional numeric vector of sample sizes. Required for type 1 charts.}
+\item{sizes}{An optional numeric vector of sample sizes. This parameter is required for type 1 charts, which are designed for discrete data.}
 
-\item{type}{An integer representing the type of control chart. There are two possible types: \code{1} for discrete data and \code{2} for continuous data.}
+\item{type}{An integer representing the type of control chart. There are two possible types: \code{1} for discrete data (such as proportions or counts) and \code{2} for continuous data.}
 
-\item{title}{An optional string for the plot title.}
+\item{title}{An optional string specifying the title of the plot.}
 }
 \value{
-A plot of the beta control chart.
+A plot of the Beta control chart.
 }
 \description{
-Creates and displays a beta control chart using the specified data, sizes, and type.
-This is the main function to use for generating control charts.
+Creates and displays a Beta control chart using the specified data, sample sizes, and type. This is the main function for generating control charts in this package.
 }
 \details{
-The Beta Chart presents the control limits based on the Beta probability distribution.  It was can be used for monitoring fraction data from Binomial distribution as replacement of the p-Charts. The Beta Chart was applied for monitoring the variables in three real studies, and it was compared to the control limits with three schemes. The comparative analysis showed that: (i) Beta approximation to the Binomial distribution was more appropriate with values confined in the \link{0, 1}- interval; and (ii) the charts proposed were more sensitive to the average run length (ARL), in both in-control and out-of-control processes monitoring. The Beta Charts outperform the Shewhart control charts analyzed for monitoring fraction data.
+The Beta Chart presents control limits based on the Beta probability distribution. It is used for monitoring fraction data from a Binomial distribution as a replacement for p-Charts. The Beta Chart has been applied in three real studies, demonstrating its effectiveness. Comparative analysis revealed that: (i) the Beta approximation to the Binomial distribution is more appropriate for values confined within the \link{0, 1} interval; and (ii) the proposed charts are more sensitive to the average run length (ARL) in both in-control and out-of-control process monitoring. Overall, the Beta Charts outperform the Shewhart control charts for monitoring fraction data.
 }
 \examples{
-data("Montgomery2005")
-bcc(Montgomery2005$Defective, Montgomery2005$Sample, type=1)
-}
-\references{
-SANT'ANNA, Ângelo M. O; CATEN, Carla Schwengber ten. Beta control charts forsave monitoring fraction data. Expert Systems With Applications, p. 10236-10243. 1 set. 2012.
+# Example for type 1 chart with discrete data
+data <- c(0.1, 0.2, 0.15, 0.3, 0.25)
+sizes <- c(100, 100, 100, 100, 100)
+bcc(data, sizes, type=1, title="Beta Control Chart for Discrete Data")
 
-Scrucca, L. (2004). qcc: an R package for quality control charting and statistical process control. \emph{R News} 4/1, 11-17.
+# Example for type 2 chart with continuous data
+data <- c(0.55, 0.60, 0.65, 0.70, 0.75)
+bcc(data, type=2, title="Beta Control Chart for Continuous Data")
+
+# Example changing the title of the chart
+data <- c(0.05, 0.10, 0.15, 0.20, 0.25)
+sizes <- c(50, 50, 50, 50, 50)
+bcc(data, sizes, type=1, title="Custom Title: Beta Control Chart for Discrete Data")
+
+# Example with uses Montgomery's data
+data_values <- Montgomery2005$Defective
+sample_sizes <- Montgomery2005$Sample
+limits <- calculate_limits_type1(Montgomery2005$Defective, Montgomery2005$Sample)
+plot_control_chart(data_values, sample_sizes, type=1, limits, "Sample Control Chart")
 }

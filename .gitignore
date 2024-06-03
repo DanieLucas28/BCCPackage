@@ -1,3 +1,7 @@
-.Rproj.user
+# Ignore R history files
 .Rhistory
-.Rbuildignore
+
+# Other files and directories to ignore
+.RData
+.Rproj.user/
+.Rproj
