@@ -8,7 +8,6 @@
 
 1. [About The Project](#about-the-project)
 2. [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 3. [Usage](#usage)
 4. [Roadmap](#roadmap)
@@ -27,24 +26,20 @@ The **Beta Control Charts (bcc)** package provides tools to apply beta control c
 
 ## Getting Started
 
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
 Ensure you have R and devtools installed on your machine:
 
-```sh
+```r
 install.packages("devtools")
 ```
 ### Installation
 
 1. Clone the repo:
-   ```sh
+   ```r
    git clone https://github.com/DanieLucas28/BCCPackage.git
     ```
 
-2. Clone the repo:
-   ```sh
+2. Install the package:
+   ```r
    devtools::install("BCCPackage")
     ```
    
