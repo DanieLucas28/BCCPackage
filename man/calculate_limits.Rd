@@ -20,10 +20,6 @@ A list containing the lower and upper control limits, and the center.
 Calculates control limits for control charts using given data and sizes. Supports both type 1 (discrete data) and type 2 (continuous data) control charts.
 }
 \examples{
-# Example for type 1 chart with discrete data
-data("Montgomery2005")
-calculate_limits(Montgomery2005$Defective, Montgomery2005$Sample, type=1)
-
 # Example for type 2 chart with continuous data
 data_values <- c(0.55, 0.60, 0.65, 0.70, 0.75)
 calculate_limits(data_values, type=2)
