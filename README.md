@@ -51,7 +51,18 @@ data <- c(0.12, 0.18, 0.14, 0.28, 0.22)
 sizes <- c(101, 98, 110, 105, 95)
 bcc(data, sizes, type=1, title="Beta Control Chart for Discrete Data")
 ```
+## Usage
 
+Here are some examples of how to use the package:
+
+### Example for Type 1 Chart with Discrete Data
+
+```r
+library(bcc)
+data <- c(0.12, 0.18, 0.14, 0.28, 0.22)
+sizes <- c(101, 98, 110, 105, 95)
+bcc(data, sizes, type=1, title="Beta Control Chart for Discrete Data")
+```
 ### Example for Type 2 Chart with Continuous Data
 
 ```r
