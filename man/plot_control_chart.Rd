@@ -24,8 +24,8 @@ A plot of the control chart.
 Generates and plots a control chart using the given data, sizes, type, and control limits.
 }
 \examples{
-data_values <- Montgomery2005$Defective
-sample_sizes <- Montgomery2005$Sample
-limits <- calculate_limits_type1(Montgomery2005$Defective, Montgomery2005$Sample)
-plot_control_chart(data_values, sample_sizes, type=1, limits, "Sample Control Chart")
+data <- c(0.12, 0.18, 0.14, 0.28, 0.22)
+sizes <- c(101, 98, 110, 105, 95)
+limits <- list(lcl = 4.03915, ucl = 16.0, center = 0.216)
+plot_control_chart(data, type=1, limits=limits, title="Sample Control Chart", sizes=sizes)
 }

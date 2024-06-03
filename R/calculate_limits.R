@@ -6,14 +6,11 @@
 #' @return A list containing the lower and upper control limits, and the center.
 #' @export
 #' @examples
-#' # Example for type 1 chart with discrete data
-#' data("Montgomery2005")
-#' calculate_limits(Montgomery2005$Defective, Montgomery2005$Sample, type=1)
-#'
 #' # Example for type 2 chart with continuous data
 #' data_values <- c(0.55, 0.60, 0.65, 0.70, 0.75)
 #' calculate_limits(data_values, type=2)
-
+#' @importFrom stats qbeta sd var
+#'
 calculate_limits <- function(data, sizes=NULL, type) {
   if (type == 1) {
     if (is.null(sizes)) {
