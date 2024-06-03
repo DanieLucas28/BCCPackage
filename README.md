@@ -63,13 +63,6 @@ data <- c(0.59, 0.67, 0.61, 0.70, 0.75)
 bcc(data, type=2, title="Beta Control Chart for Continuous Data")
 ```
 
-## Roadmap
-
-- Add Changelog
-- Add back to top links
-- Add Additional Templates w/ Examples
-- Add "components" document to easily copy & paste sections of the readme
-
 See the [open issues](https://github.com/DanieLucas28/BCCPackage/issues) for a full list of proposed features (and known issues).
 
 ## License
