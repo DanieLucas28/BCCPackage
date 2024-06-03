@@ -35,8 +35,7 @@ To get a local copy up and running, follow these simple steps.
 ### Prerequisites
 
 Ensure you have R and devtools installed on your machine:
-
-```sh install.packages("devtools") ```
+```sh install.packages("devtools")```
 
 ### Installation
 
@@ -46,7 +45,7 @@ Ensure you have R and devtools installed on your machine:
 
 ### Installation
 
-1. CInstall the package:
+2. Install the package:
    ```sh
    devtools::install("BCCPackage")
 
