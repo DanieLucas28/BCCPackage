@@ -36,8 +36,7 @@ To get a local copy up and running, follow these simple steps.
 
 Ensure you have R and devtools installed on your machine:
 
-```sh
-install.packages("devtools")
+```sh install.packages("devtools") ```sh
 
 ### Installation
 
