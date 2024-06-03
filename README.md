@@ -26,7 +26,8 @@ The **Beta Control Charts (bcc)** package provides tools to apply beta control c
 
 ## Getting Started
 
-Ensure you have R and devtools installed on your machine:
+Ensure you have [R](https://www.r-project.org/) and devtools installed on your machine:
+
 
 ```r
 install.packages("devtools")
