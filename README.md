@@ -1,7 +1,6 @@
 # Beta Control Charts (bcc)
 
 [![GitHub issues](https://img.shields.io/github/issues/DanieLucas28/BCCPackage)](https://github.com/DanieLucas28/BCCPackage/issues)
-[![GitHub forks](https://img.shields.io/github/forks/DanieLucas28/BCCPackage)](https://github.com/DanieLucas28/BCCPackage/network)
 [![GitHub stars](https://img.shields.io/github/stars/DanieLucas28/BCCPackage)](https://github.com/DanieLucas28/BCCPackage/stargazers)
 [![GitHub license](https://img.shields.io/github/license/DanieLucas28/BCCPackage)](https://github.com/DanieLucas28/BCCPackage/blob/main/LICENSE)
 
