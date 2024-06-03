@@ -15,7 +15,6 @@
 4. [Roadmap](#roadmap)
 5. [License](#license)
 6. [Contact](#contact)
-7. [Acknowledgments](#acknowledgments)
 
 ## About The Project
 
