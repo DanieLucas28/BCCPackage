@@ -38,3 +38,16 @@ Ensure you have R and devtools installed on your machine:
 
 ```sh
 install.packages("devtools")
+
+### Installation
+
+1. Clone the repo:
+   ```sh
+   git clone https://github.com/DanieLucas28/BCCPackage.git
+
+### Installation
+
+1. CInstall the package:
+   ```sh
+   devtools::install("BCCPackage")
+
