@@ -2,7 +2,6 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/DanieLucas28/BCCPackage)](https://github.com/DanieLucas28/BCCPackage/issues)
 [![GitHub stars](https://img.shields.io/github/stars/DanieLucas28/BCCPackage)](https://github.com/DanieLucas28/BCCPackage/stargazers)
-[![GitHub license](https://img.shields.io/github/license/DanieLucas28/BCCPackage)](https://github.com/DanieLucas28/BCCPackage/blob/main/LICENSE)
 
 ## Table of Contents
 
@@ -67,8 +66,7 @@ See the [open issues](https://github.com/DanieLucas28/BCCPackage/issues) for a f
 
 ## License
 
-Distributed under the GPL-3 License. See `LICENSE` for more information.
-
+Distributed under the GPL-3 License.
 ## Contact
 
 Daniel Cerqueira - [danielcerqueira@live.com](mailto:danielcerqueira@live.com)
