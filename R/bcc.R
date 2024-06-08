@@ -28,34 +28,30 @@
 #' bcc(data, sizes, type=1, title="Custom Title: Beta Control Chart for Discrete Data")
 #'
 bcc <- function(data, sizes=NULL, type, title=NULL) {
-  # If no title is provided, create a default title using the name of the data variable
+
   if (is.null(title)) {
     title <- paste("Beta Control Chart for", deparse(substitute(data)))
   }
 
-  # Check if the type is 1 (discrete data)
+  
   if (type == 1) {
-    # Ensure sizes vector is provided for type 1
+    
     if (is.null(sizes)) {
       stop("sizes is required for type 1")
     }
-    # Ensure the sizes vector has the same length as the data vector
+    
     if (length(sizes) != length(data)) {
       stop("Length of 'sizes' vector must be the same as 'data'.")
     }
-    # Calculate control limits for type 1
+    
     limits <- calculate_limits(data, sizes, type)
-    # Plot the control chart with the calculated limits
     plot_control_chart(data=data, sizes=sizes, type=type, limits=limits, title=title)
-
-    # Check if the type is 2 (continuous data)
+   
   } else if (type == 2) {
-    # Calculate control limits for type 2
+    
     limits <- calculate_limits(data, type=type)
-    # Plot the control chart with the calculated limits
     plot_control_chart(data=data, type=type, limits=limits, title=title)
-
-    # If an invalid type is specified, raise an error
+    
   } else {
     stop("Invalid type specified.")
   }
