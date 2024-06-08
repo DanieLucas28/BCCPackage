@@ -18,6 +18,10 @@
 
 The **Beta Control Charts (bcc)** package provides tools to apply beta control charts to defined values. The Beta Chart presents control limits based on the Beta probability distribution and is used for monitoring fraction data from a Binomial distribution as a replacement for p-Charts. This package helps to effectively monitor variables, offering enhanced sensitivity in process control.
 
+The Beta Chart has been applied in three real studies and compared with control limits from three different schemes. The comparative analysis showed that: (i) the Beta approximation to the Binomial distribution is more appropriate for values confined within the [0, 1] interval; and (ii) the proposed charts are more sensitive to the average run length (ARL) in both in-control and out-of-control process monitoring. Overall, the Beta Charts outperform the Shewhart control charts in monitoring fraction data.
+
+This package not only provides a robust alternative to traditional p-Charts but also ensures more accurate and sensitive monitoring of fraction data, making it an invaluable tool for quality control and process improvement. For more details, see [Ângelo Márcio Oliveira Sant’Anna and Carla Schwengber ten Caten (2012)](doi:10.1016/j.eswa.2012.02.146)
+
 ### Built With
 
 - R
