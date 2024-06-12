@@ -21,6 +21,8 @@ The Beta Chart has been applied in three real studies and compared with control 
 
 This package not only provides a robust alternative to traditional p-Charts but also ensures more accurate and sensitive monitoring of fraction data, making it an invaluable tool for quality control and process improvement. For more details, see [Ângelo Márcio Oliveira Sant’Anna and Carla Schwengber ten Caten (2012)](doi:10.1016/j.eswa.2012.02.146)
 
+Official CRAN page: https://cran.r-project.org/package=bcc
+
 ### Built With
 
 - R
