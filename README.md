@@ -29,6 +29,14 @@ This package not only provides a robust alternative to traditional p-Charts but 
 
 ## Getting Started
 
+### By Cran Repository:
+
+```r
+install.packages("bcc")
+```
+
+### With Devtools:
+
 Ensure you have [R](https://www.r-project.org/) and devtools installed on your machine:
 
 
