@@ -2,6 +2,9 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/DanieLucas28/BCCPackage)](https://github.com/DanieLucas28/BCCPackage/issues)
 [![GitHub stars](https://img.shields.io/github/stars/DanieLucas28/BCCPackage)](https://github.com/DanieLucas28/BCCPackage/stargazers)
+![R](https://img.shields.io/badge/R-4.0%2B-blue?logo=r&logoColor=white)
+![ggplot2](https://img.shields.io/badge/ggplot2-3.3.3%2B-orange?logo=ggplot&logoColor=white)
+![dplyr](https://img.shields.io/badge/dplyr-1.0.2%2B-green?logo=dplyr&logoColor=white)
 
 ## Table of Contents
 
